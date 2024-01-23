@@ -1,3 +1,4 @@
+fh=open("output3.txt",'w')
 import random
 length= 10
 password_output=''
@@ -6,4 +7,5 @@ i=1
 while(i<length):
     password_output=password_output+random.choice(character_set)
     i=i+1
-print(password_output)
+fh.write("the pasword is"+str(password_output))
+fh.close
